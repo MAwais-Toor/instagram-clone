@@ -1,0 +1,113 @@
+.sidebar {
+    border-right: 1px solid rgb(182, 181, 181);
+    width: 250px;
+    height: auto;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li{
+    /* display: flex; */
+    /* margin-bottom:20px ; */
+    padding: 15px 10px;
+    width: 90%;
+    gap: 15px;
+
+
+}
+.sidebar ul li a{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+.sidebar ul li:hover{
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+
+}
+
+.sidebar ul li a img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+
+
+.stories {
+    list-style: none;
+    text-align: center;
+}
+
+.stories li {
+    padding-right: 20px;
+}
+
+.stories li span {
+    border-radius: 500px;
+    border: 2px solid rgb(250, 2, 167);
+    padding: 20px 0;
+    position: relative;
+    top: 10px;
+}
+
+.stories li span img {
+    
+    border-radius: 500px;
+    width: 70px;
+    height: 70px;
+}
+
+.stories li p {
+    position: relative;
+    top: 5px;
+}
+
+.confirm-refresh {
+    justify-items: center;
+    border-bottom: 1px solid rgb(182, 181, 181);
+    ;
+}
+
+.confirm-refresh img {
+    width: 100px;
+}
+
+.user {
+    align-content: center;
+    
+}
+
+.user h6{
+    position: relative;
+    top: 10px;
+}
+
+.user div p {
+    color: rgb(85, 84, 84);
+    font-size: 15px;
+}
+.profiles{
+    position: relative;
+    top: 10px;
+}
+.video {
+    position: relative;
+    left: 150px;
+    border-bottom: 1px solid;
+    width: 350px;
+    
+}
+
+.video video{
+    width: 350px;
+}
+.commit{
+    gap: 10px;
+}
+.commit img  {
+    width: 25px;
+    
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram DM</title>
+  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link data-default-icon="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico" rel="shortcut icon"
+  type="image/x-icon" href="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      height: 100vh;
+      width: 70px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar img {
+      width: 35px;
+      margin: 15px 0;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .sidebar img:hover {
+      background-color: #eeeded;
+      border-radius: 5px;
+    }
+
+    .messages-panel {
+      border-right: 1px solid #ddd;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .message-item {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .message-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    .main-panel {
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .chat-header {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .chat-body {
+      padding: 20px;
+      height: calc(100vh - 140px);
+      overflow-y: auto;
+    }
+
+    .chat-footer {
+      border-top: 1px solid #ddd;
+      padding: 10px;
+    }
+    .note-section {
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      text-align: center;
+    }
+    .note-section img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column align-items-center py-3">
+
+      <img src="./sourse/svg/logo.svg" alt=""><br>
+      <img src="./sourse/svg/home.svg" alt="">
+      <img src="./sourse/svg/search.svg" alt="">
+      <img src="./sourse/svg/explore.svg" alt="">
+      <img src="./sourse/svg/reels.svg" alt="">
+      <img src="./sourse/svg/message.svg" alt="">
+      <img src="./sourse/svg/notification.svg" alt="">
+      <img src="./sourse/svg/create.svg" alt="">
+      <img src="./sourse/images/cute-couple-5392897_1280.jpg" alt="">
+      <img src="./sourse/img/Meta-ai-logo.png" alt="">
+      <img src="./sourse/svg/ai-studio.svg" alt="">
+      <img src="./sourse/svg/threads.svg" alt="">
+      <img src="./sourse/svg/manu.svg" alt="">
+
+    </div>
+
+    <!-- Messages Panel -->
+    <div class="messages-panel col-3">
+      <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <h6 class="mb-0">code_avengers</h6>
+        <i class="fas fa-edit"></i>
+      </div>
+      <div class="note-section">
+        <img src="./sourse/images/code_avengers.jpg" width="50px" style="border-radius: 50px;" alt="My DP">
+        <span class="text-muted">Your note</span>
+      </div>
+      <div class="message-item" onclick="openChat('M Awais Toor')">
+        <img src="./sourse/images/awais.jpg" style="border-radius: 50px;" width="50px" alt="DP">
+        <strong><i>M Awais Toor</i></strong><br>
+        <small class="text-muted">Reacted 😁 to your message • 12h</small>
+      </div>
+      <div class="message-item" onclick="openChat('M Shahzaib')">
+        <img src="./sourse/images/shahzaib.jpg" style="border-radius: 50px;" width="50px" alt="DP">
+
+        <strong>M Shahzaib</strong><br>
+        <small class="text-muted">Active 14h ago</small>
+      </div>
+      <div class="message-item" onclick="openChat('noori_baba')">
+        <img src="./sourse/images/insta_dp (3).jpg" style="border-radius: 50px;" width="50px" alt="DP">
+
+        <strong>Noori Baba</strong><br>
+        <small class="text-muted">You sent an attachment • 2d</small>
+      </div>
+      <div class="message-item" onclick="openChat('ch_sobanmughees')">
+        <img src="./sourse/images/insta_dp (4).jpg" style="border-radius: 50px;" width="50px" alt="DP">
+
+        <strong>Soban Mughees</strong><br>
+        <small class="text-muted">You sent an attachment • 5d</small>
+      </div>
+      <div class="message-item" onclick="openChat('Abdullah')">
+        <img src="./sourse/images/insta_dp (5).jpg" style="border-radius: 50px;" width="50px" alt="DP">
+
+        <strong>Abdullah</strong><br>
+        <small class="text-muted">You sent an attachment • 7w</small>
+      </div>
+      <div class="message-item" onclick="openChat('Hassan')">
+        <img src="./sourse/images/insta_dp (6).jpg" style="border-radius: 50px;" width="50px" alt="DP">
+
+        <strong>Hassan</strong><br>
+        <small class="text-muted">You sent an attachment • 13w</small>
+      </div>
+    </div>
+
+    <!-- Main Panel -->
+    <div class="main-panel col d-flex flex-column" id="mainPanel">
+      <div class="d-flex flex-column justify-content-center align-items-center text-center h-100">
+        <i class="fab fa-facebook-messenger text-secondary" style="font-size: 48px;"></i>
+        <h5 class="mt-3">Your messages</h5>
+        <p class="text-muted">Send private photos and messages to a friend or group.</p>
+        <button class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openChat(name) {
+      const chatHTML = `
+      <div class="chat-header d-flex justify-content-between align-items-center">
+        <div><strong>${name}</strong></div>
+        <div>
+          <i class="fas fa-phone mx-2"></i>
+          <i class="fas fa-video mx-2"></i>
+          <i class="fas fa-info-circle mx-2"></i>
+        </div>
+      </div>
+      <div class="chat-body">
+        <p><strong>${name}</strong> sent an attachment</p>
+        <img src="https://via.placeholder.com/150" class="rounded mb-2" alt="" />
+        <p>How are you?</p>
+      </div>
+      <div class="chat-footer d-flex">
+        <input type="text" class="form-control me-2" placeholder="Message...">
+        <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    `;
+      document.getElementById('mainPanel').innerHTML = chatHTML;
+    }
+  </script>
+
+</body>
+
+</html>

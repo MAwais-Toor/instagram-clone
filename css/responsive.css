@@ -1,69 +1,65 @@
-@media (min-width:1262px){
-    .mbl_footer{
+@media (min-width:1262px) {
+
+    .mbl_footer,
+    .mbl_header {
         display: none;
     }
-    .mbl_header{
-        display: none;
-    }
+
+
 }
+/* -----------------In tablet devices responsive---------------------- */
 @media (max-width:1263px) and (min-width:768px) {
 
+
+    .mbl_header,
+    .mbl_footer,
+    .sidebar .brand .text,
+    .nav-label,
+    .main-panel {
+        display: none;
+    }
+
+
+
     .sidebar {
-        border-right: 1px solid rgb(182, 181, 181);
-        width: 70px;
-        height: auto;
-        position: fixed;
-        justify-items: center;
-    }
-    .mbl_header{
-        display: none;
-    }
-    .mbl_footer{
-        display: none;
+        width: 80px;
+        padding: 1.5rem 0.5rem;
     }
 
-    .sidebar ul li a span {
-        display: none;
-    }
-    .sidebar ul li a img {
-        width: 40px;
-        /* padding-right: 10px; */
-        margin: auto;
-    }
-    .sidebar ul li {
-        /* margin-bottom:20px ; */
-        padding: 15px 0px;
-        /* width: 50%; */
-        gap: 15px;
-    }
 
-    .logo .monogram {
+
+    .sidebar .brand .logo-insta {
         display: block;
-        width: 30px;
-        justify-self: center;
-        /* margin: auto; */
     }
 
-    .logo .text {
+
+
+    .profiles {
         display: none;
     }
 }
+
+
+
 /* Responsive for mobile device */
 
-@media (max-width:769px) and (min-width:320px){
-    
-    .sidebar {
+@media (max-width:769px) and (min-width:320px) {
+
+    .sidebar,
+    .profiles,
+    .nav_link,
+    .confirm-refresh,
+    .main-panel {
         display: none;
     }
-    .profiles{
-        display: none;
-    }
-    .nav_link{
-        display: none;
-    }
-    .video-section{
+
+    .video-section {
         justify-content: center;
     }
-    
+
+    .stories {
+        overflow-y: auto;
+    }
+
 
 }
